@@ -103,7 +103,7 @@ ol,ul{
             justify-content: space-between;
             line-height: 45px;
             .rank{
-
+                display: inline-block;
             }
             img{
                 width: 45px;
@@ -121,4 +121,107 @@ ol,ul{
             }
         }
     }
+}
+
+//我的成绩 Myrecord.html
+.my-record{
+    height: 100%;
+    background: rgba($color: #050001, $alpha: .74);
+    padding-top: 87px;
+    .content{
+        
+        margin: 0px 20px;
+        border-radius: 5px;
+        border:1px solid #9b9ba4;
+        .title{
+            height: 73px;
+            display: flex;
+            justify-content: flex-start;
+            border-bottom: 1px solid #9b9ba4;
+            .avatar {
+                width: 67px;
+                height: 67px; // border-radius: 50%;
+                margin-left: 10px;
+                margin-top: 6px;
+                margin-right: 6px;
+                background: url(../images/avatarbg.png)center no-repeat;
+                background-size: 67px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 47px;
+                    height: 47px;
+                    border-radius: 50%;
+                }
+            }
+            .id{
+               font-size: 12px; 
+               margin-top: 24px;
+               margin-bottom: 8px;
+            }
+            .degree{
+                padding-left: 27px;
+                background: url(../images/degree.png) no-repeat;
+                background-size: 24px;
+                font-size: 10px;
+                color: #eac026;
+            }
+
+        }
+        .detail{
+           ul{
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                li{
+                    width: 50%;
+                    line-height: 40px;
+                    font-size: 15px;                    
+                    span:first-child{
+                        margin-left: 23px;
+                        width: 81px;
+                        display: inline-block;
+                    }
+                    span.money{
+                        color: #eac026;
+                    }
+                    span.recover{
+                        padding-left: 15px;
+                        background: url(../images/heart.png) left center no-repeat;
+                        background-size: 13px;
+                        box-sizing: border-box;
+                    }
+                    
+                }
+                li:nth-child(2n){
+                    span:first-child {
+                        width: 85px;
+                    }
+                }
+           }
+           .btn{
+               display: flex;
+               justify-content: space-between;
+               margin:0 auto;
+               padding: 23px 36px;
+               a{
+                   background: #fff;
+                   color: #171616;
+                   font-size: 15px;
+                   display: block;
+                   width: 108px;
+                   height: 30px;
+                   line-height: 30px;
+                   text-align: center;
+                   border-radius: 15px;
+                   
+               }
+               a:first-child {
+                   background: #eac026;
+               }
+           }
+        }
+    }
+
 }

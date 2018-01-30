@@ -80,6 +80,8 @@ ol, ul {
     display: flex;
     justify-content: space-between;
     line-height: 45px; }
+    .cal-list ul li .rank {
+      display: inline-block; }
     .cal-list ul li img {
       width: 45px;
       height: 45px;
@@ -90,3 +92,80 @@ ol, ul {
     .cal-list ul li .right {
       font-size: 20px;
       font-family: "Comic Sans MS"; }
+
+.my-record {
+  height: 100%;
+  background: rgba(5, 0, 1, 0.74);
+  padding-top: 87px; }
+  .my-record .content {
+    margin: 0px 20px;
+    border-radius: 5px;
+    border: 1px solid #9b9ba4; }
+    .my-record .content .title {
+      height: 73px;
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: 1px solid #9b9ba4; }
+      .my-record .content .title .avatar {
+        width: 67px;
+        height: 67px;
+        margin-left: 10px;
+        margin-top: 6px;
+        margin-right: 6px;
+        background: url(../images/avatarbg.png) center no-repeat;
+        background-size: 67px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .my-record .content .title .avatar img {
+          width: 47px;
+          height: 47px;
+          border-radius: 50%; }
+      .my-record .content .title .id {
+        font-size: 12px;
+        margin-top: 24px;
+        margin-bottom: 8px; }
+      .my-record .content .title .degree {
+        padding-left: 27px;
+        background: url(../images/degree.png) no-repeat;
+        background-size: 24px;
+        font-size: 10px;
+        color: #eac026; }
+    .my-record .content .detail ul {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      .my-record .content .detail ul li {
+        width: 50%;
+        line-height: 40px;
+        font-size: 15px; }
+        .my-record .content .detail ul li span:first-child {
+          margin-left: 23px;
+          width: 81px;
+          display: inline-block; }
+        .my-record .content .detail ul li span.money {
+          color: #eac026; }
+        .my-record .content .detail ul li span.recover {
+          padding-left: 15px;
+          background: url(../images/heart.png) left center no-repeat;
+          background-size: 13px;
+          box-sizing: border-box; }
+      .my-record .content .detail ul li:nth-child(2n) span:first-child {
+        width: 85px; }
+    .my-record .content .detail .btn {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 23px 36px; }
+      .my-record .content .detail .btn a {
+        background: #fff;
+        color: #171616;
+        font-size: 15px;
+        display: block;
+        width: 108px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 15px; }
+      .my-record .content .detail .btn a:first-child {
+        background: #eac026; }
