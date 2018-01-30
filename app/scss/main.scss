@@ -1,0 +1,124 @@
+html{
+    height: 100%;
+    line-height: 1;
+}
+body{
+    width:100%;
+    height: 100%;
+    background: #95a6ee url(../images/bg.png) center 60% no-repeat;
+    background-size: 220px;
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ol,ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+//首页
+
+.cal-index{
+    height: 100%;
+    background: #34374f url(../images/bg.png) center 60% no-repeat;
+    background-size: 220px;
+    text-align: center;
+    color: #fff;
+    h1{
+        margin: 0;
+        padding-top: 155px;
+        font-size: 70px;
+        font-weight: normal;
+    }
+    h2{
+
+    }
+    div{
+        position: absolute;
+        bottom: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        width:130px;
+        font-size: 14px;
+        margin:0 auto;
+        a{
+            // margin:0 12px;
+        }
+        a:first-child{
+            display: inline-block;
+            // width:43px;
+            padding-left: 20px;
+            padding-bottom: 2px;
+            background: url(../images/cup.png)0 center no-repeat;
+            background-size: 15px;
+
+            border-bottom: 1px solid #eac026;
+        }
+    }
+    >a:last-child{
+
+        width: 193px;
+        height: 55px;
+        // margin-left: -86px;
+        transform: translateX(-50%);
+        border-radius: 28px;
+        display: block;
+        background-color: #fff;
+        color: #000;
+        font-size: 22px;
+        line-height: 55px;
+        position: absolute;
+        bottom: 69px;
+        left: 50%;
+    }
+}
+
+
+//排行榜 list.html
+
+.cal-list{
+    height: 100%;
+    background: rgba($color: #050001, $alpha: .74);
+    padding: 0 8px;
+    .title{
+        padding-top: 82px;
+        margin-left: 12px;
+        padding-left: 25px;
+        background: url(../images/cup.png)0 82px no-repeat;
+        background-size: 15px;
+        font-size: 12px;
+    }
+    ul{
+        li{
+            height: 45px;            
+            padding: 15px 0;
+            padding-left: 18px;
+            padding-right: 39px;
+            border-bottom: 1px solid #595a68;
+            display: flex;
+            justify-content: space-between;
+            line-height: 45px;
+            .rank{
+
+            }
+            img{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+            }
+            .name{
+                line-height: 45px;
+                display: inline-block;
+            }
+
+            .right{
+                font-size: 20px;
+                font-family: "Comic Sans MS";
+            }
+        }
+    }
+}
