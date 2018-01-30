@@ -169,3 +169,41 @@ ol, ul {
         border-radius: 15px; }
       .my-record .content .detail .btn a:first-child {
         background: #eac026; }
+
+.select-model {
+  height: 100%;
+  background: rgba(5, 0, 1, 0.74);
+  padding: 0 57px;
+  text-align: center; }
+  .select-model h1 {
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    padding-top: 112px;
+    font-weight: normal; }
+  .select-model a {
+    display: block;
+    font-size: 17px;
+    height: 54px;
+    line-height: 54px;
+    background: #fff url(../images/star.png);
+    border-radius: 27px;
+    margin-bottom: 11px;
+    color: #1e1717;
+    background-size: 302px; }
+  .select-model a:first-of-type {
+    margin-top: 46px;
+    background: #eac026 url(../images/star.png);
+    background-size: 302px;
+    background-position: -50px -30px; }
+  .select-model h2 {
+    text-align: left;
+    margin-top: 23px;
+    margin-bottom: 15px;
+    color: #dad1d1;
+    font-size: 13px;
+    font-weight: normal; }
+  .select-model a:nth-of-type(2) {
+    background-position: -50px -60px; }
+  .select-model a:nth-of-type(3) {
+    background-position: -50px -20px; }
