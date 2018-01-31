@@ -13,7 +13,8 @@ a {
   color: #fff;
   text-decoration: none; }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -207,3 +208,115 @@ ol, ul {
     background-position: -50px -60px; }
   .select-model a:nth-of-type(3) {
     background-position: -50px -20px; }
+
+.play-game {
+  height: 100%;
+  background: rgba(5, 0, 1, 0.74); }
+  .play-game .title {
+    padding: 87px 27px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
+    .play-game .title span:nth-child(2) {
+      font-size: 13px; }
+    .play-game .title > span:before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      margin-right: 5px;
+      background: #eac026;
+      display: inline-block; }
+    .play-game .title > span {
+      text-align: right;
+      font-size: 12px; }
+  .play-game .content {
+    width: 282.5px;
+    height: 190px;
+    margin: 38px auto 0;
+    padding: 0 17.5px;
+    background: url(../images/blackboard.png) center no-repeat;
+    background-size: 317.5px; }
+    .play-game .content .time {
+      text-align: center;
+      padding-top: 25px;
+      font-size: 17px; }
+    .play-game .content .tips {
+      color: #eac026;
+      font-size: 12px;
+      height: 19px;
+      line-height: 19px;
+      width: 69px;
+      text-align: center;
+      border: 1px solid #969499;
+      border-radius: 10px; }
+    .play-game .content .test {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 25px; }
+      .play-game .content .test .test-main {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 75%; }
+      .play-game .content .test .wrong {
+        background: url(../images/wrong.png) no-repeat;
+        background-size: 45px;
+        width: 45px;
+        height: 45px; }
+      .play-game .content .test .right {
+        background: url(../images/right.png) center no-repeat;
+        background-size: 52px;
+        width: 52px;
+        height: 45px; }
+  .play-game .btn {
+    width: 260px;
+    margin: 35px auto 0;
+    display: flex;
+    justify-content: space-between; }
+    .play-game .btn input {
+      width: 149px;
+      height: 55px;
+      margin: 0;
+      border: 0;
+      background: rgba(5, 0, 1, 0.35);
+      font-size: 30px;
+      border-radius: 5px;
+      line-height: 55px;
+      color: #fff;
+      text-indent: 18px; }
+    .play-game .btn .clear {
+      position: relative; }
+    .play-game .btn a {
+      width: 95px;
+      height: 55px;
+      line-height: 55px;
+      color: #171616;
+      font-size: 15px;
+      background: #eac026;
+      text-align: center;
+      border-radius: 5px; }
+  .play-game .keyboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 55px 15px 0;
+    max-width: 345px;
+    margin: 0 auto; }
+    .play-game .keyboard a {
+      width: 61px;
+      height: 61px;
+      border-radius: 50%;
+      text-align: center;
+      border: 0;
+      margin-bottom: 30px;
+      color: #171616;
+      font-size: 28px;
+      background: #fff; }
+      .play-game .keyboard a span {
+        height: 30px;
+        width: 15px;
+        display: inline-block;
+        border-bottom: 2px solid #eac026;
+        margin-top: 14px; }
