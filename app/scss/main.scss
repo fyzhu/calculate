@@ -87,6 +87,8 @@ ul {
         background: url(../images/cup.png)0 82px no-repeat;
         background-size: 15px;
         font-size: 12px;
+        height: 15px;
+        line-height: 15px;
     }
     ul {
         li {
@@ -98,8 +100,38 @@ ul {
             display: flex;
             justify-content: space-between;
             line-height: 45px;
+            position: relative;
             .rank {
                 display: inline-block;
+                width: 30px;
+                position: relative;
+                top:-5px;
+                text-align: center;
+            }
+            &.first::before{
+                content:"";
+                width: 27px;
+                height: 24px;
+                background: url(../images/crown.png)center no-repeat;
+                background-size: 26px;
+                position: absolute;
+                left:47px;
+                top:5px;
+
+            }
+            &.top{
+                .rank{
+                    font-size: 25px;
+                    color: #eac026;
+                }
+                .right{
+                    color: #eac026;
+                }
+            }
+            &.me{
+                .right{
+                    color: #eac026;
+                }
             }
             img {
                 width: 45px;
@@ -109,6 +141,10 @@ ul {
             .name {
                 line-height: 45px;
                 display: inline-block;
+                margin-left: 18px;
+                position: relative;
+                top:-15px;
+                font-size: 15px;
             }
             .right {
                 font-size: 20px;
@@ -127,6 +163,7 @@ ul {
         margin: 0px 20px;
         border-radius: 5px;
         border: 1px solid #9b9ba4;
+        background: rgba($color: #050001, $alpha: .53);
         .title {
             height: 73px;
             display: flex;
@@ -485,4 +522,92 @@ ul {
 
     }
     
+}
+
+//refund.html
+
+.refund{
+    .content{
+        padding: 0 27px;
+        .title{
+            border:0;
+            margin-top: 28px;
+            height: 35px;
+            color: #eac026;
+        }
+        input{
+            width: 100%;
+            background: none;
+            border:none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            font-size: 12px;
+            text-indent: 6px;
+            height: 29px;
+            line-height: 29px;
+        }
+        .detail{
+            margin-top: 22px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #efeded;
+            a{
+                width: 100%;
+                display: block;
+                text-align: center;
+                height: 37px;
+                line-height: 37px;
+                background: #fff;
+                color: #000;
+                margin:34px 0;
+                border-radius: 18px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+//recover.html
+.recover{
+    .content{
+        padding: 53px 0 32px;
+        text-align: center;
+        .tip1{
+            font-size: 15px;
+        }
+        .tip2{
+            font-size: 12px;
+            margin-top: 20px;
+            color: #eac026;
+        }
+        .detail{
+            margin-top: 55px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            span:first-child{
+                display: inline-block;
+                padding-left: 29px;
+                font-size: 15px;
+                background: url(../images/heart.png)left center no-repeat;
+                background-size: 20px;
+            }
+            span:last-child{
+                font-size: 12px;
+                color: #efeded;
+            }
+        }
+        >a{
+            display: block;
+            text-align: center;
+            height: 37px;
+            line-height: 37px;
+            
+            width: 132px;
+            margin:50px auto 0;
+            background: #fff;
+            border-radius: 19px;
+            color: #000;
+        }
+    }
 }

@@ -71,7 +71,9 @@ ul {
     padding-left: 25px;
     background: url(../images/cup.png) 0 82px no-repeat;
     background-size: 15px;
-    font-size: 12px; }
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px; }
   .cal-list ul li {
     height: 45px;
     padding: 15px 0;
@@ -80,16 +82,41 @@ ul {
     border-bottom: 1px solid #595a68;
     display: flex;
     justify-content: space-between;
-    line-height: 45px; }
+    line-height: 45px;
+    position: relative; }
     .cal-list ul li .rank {
-      display: inline-block; }
+      display: inline-block;
+      width: 30px;
+      position: relative;
+      top: -5px;
+      text-align: center; }
+    .cal-list ul li.first::before {
+      content: "";
+      width: 27px;
+      height: 24px;
+      background: url(../images/crown.png) center no-repeat;
+      background-size: 26px;
+      position: absolute;
+      left: 47px;
+      top: 5px; }
+    .cal-list ul li.top .rank {
+      font-size: 25px;
+      color: #eac026; }
+    .cal-list ul li.top .right {
+      color: #eac026; }
+    .cal-list ul li.me .right {
+      color: #eac026; }
     .cal-list ul li img {
       width: 45px;
       height: 45px;
       border-radius: 50%; }
     .cal-list ul li .name {
       line-height: 45px;
-      display: inline-block; }
+      display: inline-block;
+      margin-left: 18px;
+      position: relative;
+      top: -15px;
+      font-size: 15px; }
     .cal-list ul li .right {
       font-size: 20px;
       font-family: "Comic Sans MS"; }
@@ -101,7 +128,8 @@ ul {
   .my-record .content {
     margin: 0px 20px;
     border-radius: 5px;
-    border: 1px solid #9b9ba4; }
+    border: 1px solid #9b9ba4;
+    background: rgba(5, 0, 1, 0.53); }
     .my-record .content .title {
       height: 73px;
       display: flex;
@@ -387,3 +415,71 @@ ul {
     .score > a:last-child {
       bottom: 60px;
       background: #eac026; }
+
+.refund .content {
+  padding: 0 27px; }
+  .refund .content .title {
+    border: 0;
+    margin-top: 28px;
+    height: 35px;
+    color: #eac026; }
+  .refund .content input {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    text-indent: 6px;
+    height: 29px;
+    line-height: 29px; }
+  .refund .content .detail {
+    margin-top: 22px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #efeded; }
+    .refund .content .detail a {
+      width: 100%;
+      display: block;
+      text-align: center;
+      height: 37px;
+      line-height: 37px;
+      background: #fff;
+      color: #000;
+      margin: 34px 0;
+      border-radius: 18px;
+      font-size: 15px; }
+
+.recover .content {
+  padding: 53px 0 32px;
+  text-align: center; }
+  .recover .content .tip1 {
+    font-size: 15px; }
+  .recover .content .tip2 {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #eac026; }
+  .recover .content .detail {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px; }
+    .recover .content .detail span:first-child {
+      display: inline-block;
+      padding-left: 29px;
+      font-size: 15px;
+      background: url(../images/heart.png) left center no-repeat;
+      background-size: 20px; }
+    .recover .content .detail span:last-child {
+      font-size: 12px;
+      color: #efeded; }
+  .recover .content > a {
+    display: block;
+    text-align: center;
+    height: 37px;
+    line-height: 37px;
+    width: 132px;
+    margin: 50px auto 0;
+    background: #fff;
+    border-radius: 19px;
+    color: #000; }
