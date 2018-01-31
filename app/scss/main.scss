@@ -395,3 +395,94 @@ ul {
         }
     }
 }
+
+//score.html
+
+.score{
+    height: 100%;
+    background: rgba($color: #050001, $alpha: .74);
+    .header{
+        text-align: center;
+        padding-top: 85px;
+        background: url(../images/star2.png) center 125px no-repeat;
+        background-size: 200px;
+        img{
+            width: 54px;
+            height:54px;
+            border-radius: 50%;
+
+        }
+        div:first-of-type{
+            font-size: 20px;
+            margin-top: 18px;
+            span{
+                display: inline-block;
+                margin-left: 5px;
+            }
+        }
+        div:last-of-type{
+            
+            height: 20px;
+            line-height: 20px;
+            color: #eac026;
+            font-size: 12px;
+            width: 114px;
+            margin:26px auto 65px;
+            border:1px solid #898a94;
+            border-radius: 10px;
+            background: rgba($color: #111218, $alpha: .46)
+        }
+    }
+    .title{
+        padding: 0 25px;
+        text-indent: 23px;
+        // height: 23px;
+        background: url(../images/cup.png)25px 0 no-repeat;
+        background-size: 15px;
+        font-size: 12px;
+        span:last-child{
+            color: #eac026;
+            display: inline-block;
+            // margin-left: 20px;
+            a{
+                color: #eac026;
+                text-decoration: underline;
+                
+            }
+        }
+    }
+    .rank{
+        padding: 0 25px;
+        margin-top: 20px;
+        font-size: 17px;
+        span{
+            font-size: 20px;
+            display: inline-block;
+            margin-left: 12px;
+
+        }
+    }
+    >a{
+        display: block;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        height: 45px;
+        line-height: 45px;
+        width:157px;
+        font-size: 18px;
+        text-align: center;
+        background: #fff;
+        color: #171616;
+        border-radius: 23px;
+        &:first-of-type{
+            bottom: 135px;
+        }
+        &:last-child{
+            bottom: 60px;
+            background: #eac026;
+        }
+
+    }
+    
+}
