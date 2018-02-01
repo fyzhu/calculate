@@ -91,7 +91,7 @@ ul {
 
 //排行榜 list.html
 .cal-list {
-    height: 100%;
+    min-height: 100%;
     background: rgba($color: #050001, $alpha: .74);
     padding: 0 8px;
     .title {
@@ -295,10 +295,12 @@ ul {
         background-size: 302px;
     }
     a:first-of-type {
-        margin-top: 46px;
-        background: #eac026 url(../images/star.png);
+        margin-top: 46px;        
         background-size: 302px;
         background-position: -50px -30px;
+    }
+    a:active{
+        background: #eac026 url(../images/star.png);
     }
     h2 {
         text-align: left;
@@ -464,7 +466,7 @@ ul {
             color: #171616;
             font-size: 28px;
             background: #fff;
-            &.on{
+            &:active{
                 background: #f7ce38;
             }
             span{
