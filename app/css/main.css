@@ -29,25 +29,32 @@ ul {
     margin: 0;
     padding-top: 155px;
     font-size: 70px;
-    font-weight: normal; }
-  .cal-index div {
+    font-weight: normal;
+    height: 55px;
+    background: url(../images/logo.png) center 155px no-repeat;
+    background-size: 189px 55px; }
+  .cal-index h2 {
+    background: url(../images/font.png) center 0px no-repeat;
+    background-size: 86px 16px;
+    height: 16px; }
+  .cal-index div:first-of-type {
     position: absolute;
     bottom: 160px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 130px;
     font-size: 14px;
     margin: 0 auto; }
-    .cal-index div a:first-child {
+    .cal-index div:first-of-type a:first-child {
       display: inline-block;
       padding-left: 20px;
       padding-bottom: 2px;
       background: url(../images/cup.png) 0 center no-repeat;
       background-size: 15px;
       border-bottom: 1px solid #eac026; }
-  .cal-index > a:last-child {
+  .cal-index .start a {
     width: 193px;
     height: 55px;
     transform: translateX(-50%);
@@ -58,8 +65,14 @@ ul {
     font-size: 22px;
     line-height: 55px;
     position: absolute;
-    bottom: 69px;
+    bottom: 89px;
     left: 50%; }
+  .cal-index div:last-child {
+    position: absolute;
+    bottom: 42px;
+    font-size: 14px;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .cal-list {
   height: 100%;
@@ -124,7 +137,8 @@ ul {
 .my-record {
   height: 100%;
   background: rgba(5, 0, 1, 0.74);
-  padding-top: 87px; }
+  padding-top: 87px;
+  box-sizing: border-box; }
   .my-record .content {
     margin: 0px 20px;
     border-radius: 5px;
@@ -159,6 +173,8 @@ ul {
         background: url(../images/degree.png) no-repeat;
         background-size: 24px;
         font-size: 10px;
+        height: 15px;
+        line-height: 15px;
         color: #eac026; }
     .my-record .content .detail ul {
       display: flex;
@@ -239,6 +255,7 @@ ul {
 
 .play-game {
   height: 100%;
+  min-height: 667px;
   background: rgba(5, 0, 1, 0.74); }
   .play-game .title {
     padding: 87px 27px 0;
@@ -265,7 +282,23 @@ ul {
     margin: 38px auto 0;
     padding: 0 17.5px;
     background: url(../images/blackboard.png) center no-repeat;
-    background-size: 317.5px; }
+    background-size: 317.5px;
+    position: relative; }
+    .play-game .content .notice {
+      font-size: 12px;
+      color: #eac026;
+      text-align: center;
+      position: absolute;
+      height: 20px;
+      line-height: 20px;
+      padding: 0 6px;
+      border: 1px solid #969499;
+      border-radius: 10px;
+      top: -28px;
+      min-width: 210px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(17, 18, 24, 0.46); }
     .play-game .content .time {
       text-align: center;
       padding-top: 25px;
@@ -278,7 +311,8 @@ ul {
       width: 69px;
       text-align: center;
       border: 1px solid #969499;
-      border-radius: 10px; }
+      border-radius: 10px;
+      background: rgba(17, 18, 24, 0.46); }
     .play-game .content .test {
       display: flex;
       justify-content: space-between;
@@ -302,7 +336,8 @@ ul {
     width: 260px;
     margin: 35px auto 0;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     .play-game .btn input {
       width: 149px;
       height: 55px;
@@ -315,7 +350,13 @@ ul {
       color: #fff;
       text-indent: 18px; }
     .play-game .btn .clear {
-      position: relative; }
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: url(../images/clear.png) center no-repeat;
+      background-size: 18px;
+      left: 113px;
+      top: 18.5px; }
     .play-game .btn a {
       width: 95px;
       height: 55px;
@@ -342,6 +383,8 @@ ul {
       color: #171616;
       font-size: 28px;
       background: #fff; }
+      .play-game .keyboard a.on {
+        background: #f7ce38; }
       .play-game .keyboard a span {
         height: 30px;
         width: 15px;
@@ -380,6 +423,7 @@ ul {
   .score .title {
     padding: 0 25px;
     text-indent: 23px;
+    height: 15px;
     background: url(../images/cup.png) 25px 0 no-repeat;
     background-size: 15px;
     font-size: 12px; }
@@ -449,6 +493,40 @@ ul {
       margin: 34px 0;
       border-radius: 18px;
       font-size: 15px; }
+
+.refund .hover {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); }
+  .refund .hover .notice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 280px;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 5px; }
+    .refund .hover .notice .title {
+      margin-top: 29px; }
+    .refund .hover .notice .desc {
+      font-size: 15px;
+      color: #999;
+      margin-top: 15px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #d2d3d5; }
+    .refund .hover .notice a {
+      color: #00c200;
+      font-size: 18px;
+      display: block;
+      height: 50px;
+      line-height: 50px; }
 
 .recover .content {
   padding: 53px 0 32px;
