@@ -480,6 +480,23 @@ ul {
     }
 }
 
+//iphone5等低分辨率下
+@media screen and (max-width: 350px) {
+    .play-game .content{
+        background-size: 300px;
+    }
+    .play-game .keyboard a{
+        width: 55px;
+        height: 55px;
+    }
+    .my-record .content .detail .btn{
+        padding: 23px;
+    }
+    .my-record .content .detail ul li span:first-child{
+        margin-left: 13px;
+    }
+}
+
 //score.html
 
 .score{
