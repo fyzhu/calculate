@@ -23,6 +23,7 @@ ul {
     list-style: none;
 }
 
+
 //首页
 .cal-index {
     height: 100%;
@@ -319,12 +320,13 @@ ul {
 }
 
 //playgame.html
+/*playgame*/
 .play-game {
     height: 100%;
     min-height: 667px;
     background: rgba($color: #050001, $alpha: .74);
     .title {
-        padding: 87px 27px 0;
+        padding: 6.5% 27px 0;
         font-size: 20px;
         display: flex;
         justify-content: space-between;
@@ -420,6 +422,7 @@ ul {
             width: 149px;
             height: 55px;
             margin:0;
+            padding: 0;
             border:0;
             background: rgba($color: #050001, $alpha: .35);
             font-size: 30px;
@@ -479,20 +482,20 @@ ul {
         }
     }
 }
-
 //iphone5等低分辨率下
+/*iphone5等低分辨率下*/
 @media screen and (max-width: 350px) {
-    .play-game .content{
+    .play-game .content {
         background-size: 300px;
     }
-    .play-game .keyboard a{
+    .play-game .keyboard a {
         width: 55px;
         height: 55px;
     }
-    .my-record .content .detail .btn{
+    .my-record .content .detail .btn {
         padding: 23px;
     }
-    .my-record .content .detail ul li span:first-child{
+    .my-record .content .detail ul li span:first-child {
         margin-left: 13px;
     }
 }
