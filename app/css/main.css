@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   height: 100%;
   line-height: 1; }
@@ -254,12 +255,13 @@ ul {
   .select-model a:nth-of-type(3) {
     background-position: -50px -20px; }
 
+/*playgame*/
 .play-game {
   height: 100%;
   min-height: 667px;
   background: rgba(5, 0, 1, 0.74); }
   .play-game .title {
-    padding: 87px 27px 19px;
+    padding: 6.5% 27px 0;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -349,6 +351,7 @@ ul {
       width: 149px;
       height: 55px;
       margin: 0;
+      padding: 0;
       border: 0;
       background: rgba(5, 0, 1, 0.35);
       font-size: 30px;
@@ -399,6 +402,7 @@ ul {
         border-bottom: 2px solid #eac026;
         margin-top: 14px; }
 
+/*iphone5等低分辨率下*/
 @media screen and (max-width: 350px) {
   .play-game .content {
     background-size: 300px; }
