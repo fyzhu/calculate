@@ -54,9 +54,7 @@ ul {
         width: 130px;
         font-size: 14px;
         margin: 0 auto;
-        a {
-            // margin:0 12px;
-        }
+        
         a:first-child {
             display: inline-block; // width:43px;
             padding-left: 20px;
@@ -93,12 +91,31 @@ ul {
 .cal-list {
     min-height: 100%;
     background: rgba($color: #050001, $alpha: .74);
-    padding: 0 8px;
+    padding: 55px 8px 0;
+    .tabs {
+        display: flex;
+        justify-content: center;
+        border-radius: 4px;
+        border: 1px solid #fff;
+        overflow: hidden;
+        width: 110px;
+        margin: 0 auto;
+        span {
+            width: 55px;
+            height: 28px;
+            text-align: center;
+            line-height: 28px;
+            &.on {
+                background: #fff;
+                color: #1c1b22;
+            }
+        }
+    }
     .title {
-        padding-top: 82px;
+        padding-top: 18px;
         margin-left: 12px;
         padding-left: 25px;
-        background: url(../images/cup.png)0 82px no-repeat;
+        background: url(../images/cup.png)0 18px no-repeat;
         background-size: 15px;
         font-size: 12px;
         height: 15px;
@@ -425,7 +442,7 @@ ul {
     .btn{
         width: 260px;
         margin:35px auto 0;
-        display: flex;
+        display: none;
         justify-content: space-between;
         position: relative;
         input{
@@ -488,6 +505,71 @@ ul {
                 border-bottom: 2px solid #eac026;
                 margin-top: 14px;
             }
+        }
+    }
+    .keyboard2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 55px 15px 0;
+        max-width: 345px;
+        margin: 0 auto;
+        .input {
+            width: 30%;
+            height: 50px;
+            margin: 4px;
+            position: relative;
+            .clear {
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                background: url(../images/clear.png)center no-repeat;
+                background-size: 18px;
+                right: 11px;
+                top: 15px;
+            }
+            input {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                background: rgba($color: #050001, $alpha: .35);
+                font-size: 30px;
+                border-radius: 5px;
+                line-height: 48px;
+                color: #fff;
+                text-indent: 18px;
+            }
+        }
+        a {
+            width: 30%;
+            height: 50px;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            border: 0;
+            margin: 4px;
+            color: #171616;
+            font-size: 18px;
+            line-height: 50px;
+            background: #e0dfdf;
+            &:active {
+                span {
+                    background: #f7ce38;
+                }
+            }
+            span {
+                height: 48px;
+                width: 100%;
+                display: inline-block; // border-bottom: 2px solid #eac026;
+                // margin-top: 14px;
+                background: #fff;
+            }
+        }
+        a.commit {
+            height: 48px;
+            background: #eac026;
+            color: #2c2b3d;
         }
     }
 }
@@ -567,12 +649,16 @@ ul {
     .rank{
         padding: 0 25px;
         margin-top: 20px;
-        font-size: 17px;
-        span{
-            font-size: 20px;
+        font-size: 12px;
+        span {
+            // font-size: 12px;
             display: inline-block;
-            margin-left: 12px;
+            margin-left: 8px;
+        }
 
+        a {
+            margin-left: 20px;
+            color: #eac026;
         }
     }
     >a{
