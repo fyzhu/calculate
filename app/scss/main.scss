@@ -341,7 +341,7 @@ ul {
     min-height: 667px;
     background: rgba($color: #050001, $alpha: .74);
     .title {
-        padding: 87px 27px 19px;
+        padding: 6.5% 27px 19px;
         font-size: 20px;
         display: flex;
         justify-content: space-between;
@@ -511,7 +511,7 @@ ul {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 55px 15px 0;
+        padding: 35px 15px 0;
         max-width: 345px;
         margin: 0 auto;
         .input {
@@ -590,7 +590,19 @@ ul {
         margin-left: 13px;
     }
 }
-
+@media screen and (max-height: 640px) {
+    .play-game .keyboard2{
+        padding-top: 15px;
+    }
+    .play-game .keyboard2 a{
+        height: 45px;
+        line-height: 45px;        
+    }
+    .play-game .keyboard2 a span{
+        height: 43px;
+    }
+}
+    
 //score.html
 
 .score{
